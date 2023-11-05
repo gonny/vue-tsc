@@ -11,23 +11,14 @@ export default [
       "@vue/eslint-config-prettier",
       "@rushstack/eslint-patch/modern-module-resolution"
     ],
-    overrides: [
-      {
-        env: {
-          node: true,
-        },
-        files: [".eslintrc.{js,cjs}"],
-        parserOptions: {
-          sourceType: "script",
-        },
-      },
-    ],
     parser: "vue-eslint-parser",
     parserOptions: {
       ecmaVersion: "latest",
       parser: "@typescript-eslint/parser",
       sourceType: "module",
     },
+    plugins: ["@stylistic", "vue"],
+    files: ["**/*{.vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts}"],
     env: {
       "vue/setup-compiler-macros": true,
         browser: true,
