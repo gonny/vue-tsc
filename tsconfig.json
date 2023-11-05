@@ -1,6 +1,10 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "vue-global-props.d.ts"],
+  "include": ["src/**/*"],
+  "exclude": ["dist", "node_modules", "cypress", "public",
+    "eslint.config.js",
+    "*.config.{js,ts,mjs}"
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -9,19 +13,25 @@
     "preserveValueImports": false,
     "importsNotUsedAsValues": "remove",
     "verbatimModuleSyntax": true,
-    "types": ["vite/client"],
+    "types": [
+      "vite/client",
+      "vue/ref-macros"
+    ],
     "strict": true,
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
     "module": "ESNext",
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
   "parserOptions": {
     "extraFileExtensions": [".vue"]
   },
-  "references": [
-    {
-      "path": "./tsconfig.vite-config.json"
-    }
-  ]
+  "vueCompilerOptions": {}
 }
