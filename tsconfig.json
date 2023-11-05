@@ -5,9 +5,17 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["vite/client"],
+    "strict": true,
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Node"
   },
-
+  "parserOptions": {
+    "extraFileExtensions": [".vue"]
+  },
   "references": [
     {
       "path": "./tsconfig.vite-config.json"
