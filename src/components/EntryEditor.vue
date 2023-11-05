@@ -2,7 +2,7 @@
 import EmojiField from "@/components/EmojiField.vue";
 import ArrowCircleRight from "@/assets/icons/arrow-circle-right.svg";
 import { ref, computed, onMounted } from "vue";
-import type Emoji from "@/types/emoji";
+import type { Emoji } from "@/types/emoji";
 import type Entry from "@/types/entry";
 import { defineEmits, inject } from "vue";
 import { userInjectionKey } from "@/injectionKeys";

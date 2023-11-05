@@ -1,4 +1,4 @@
-type Emoji =
+export type Emoji =
   | "confused"
   | "cool"
   | "crying"
@@ -13,5 +13,3 @@ type Emoji =
   | "surprised"
   | "wink"
   | "worried";
-
-export default Emoji;

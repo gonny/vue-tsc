@@ -5,12 +5,15 @@ export default [
   {
     root: true,
     extends: [
-      "plugin:vue/vue3-recommended",
       "eslint:recommended",
       "@vue/eslint-config-typescript/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:vue/vue3-recommended",
+      "plugin:vue/base",
       "@vue/eslint-config-prettier",
       "@rushstack/eslint-patch/modern-module-resolution"
     ],
+    "verbatimModuleSyntax": true,
     parser: "vue-eslint-parser",
     parserOptions: {
       ecmaVersion: "latest",

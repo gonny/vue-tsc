@@ -1,4 +1,4 @@
-import type Emoji from "./emoji";
+import type { Emoji } from "./emoji";
 
 export default interface Entry {
   id: number;
