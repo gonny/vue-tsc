@@ -17,6 +17,8 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.5.1",
     "@stylistic/eslint-plugin": "^1.0.0",
+    "@eslint/js": "^8.53.0",
+    "@types/eslint": "^8.44.6",
     "@types/node": "^18.18.8",
     "@typescript-eslint/parser": "^5.62.0",
     "@vitejs/plugin-vue": "^4.4.0",
